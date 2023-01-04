@@ -1,25 +1,37 @@
-/* unvisited link */
-a:link {
-    color: red;
-  }
-  
-  /* visited link */
-  a:visited {
-    color: green;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: hotpink;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 30px
-  }
-  
-  /* selected link */
-  a:active {
-    color: blue;
-    font-family: sans-serif, Arial, Helvetica;
-    font-size: 10px
-  }
+/* At the top of the file */
+:root {
+
+    /* FONTS */
+    --regular: "Arial";
+   
+    /* COLORS */
+    --dark-brown: #402214;
+    --lighter-brown:  #774231;
+    --lightest-brown: #aa4b1b;
+   
+    --darker-red: #b31714;
+    --lighter-red: #dc3439;
+   
+    --white: #FFF;
+    --black: #000;
+
+    /* PADDING */
+    --regular: "35px 70px 50px 90px";
+   
+   }
+   
+   /* Usage */   
+   
+   h1 {
+    font-family: var(--regular);
+    color: var(--darker-red);
+    background-color: var(--lighter-brown);
+    padding: var(--regular)
+   }
+
+   h2 {
+    font-family: var(--regular);
+    color: var(--lighter-red);
+    background-color: var(--dark-brown);
+    padding: var(--regular)
+   }
