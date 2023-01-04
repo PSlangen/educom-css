@@ -1,14 +1,25 @@
-.site-font {
+/* unvisited link */
+a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-}
-
-.site-color {
-    background-color: indigo;
-    color: rgb(229, 255, 0);
-}
-
-.site-square {
-    width: 200px;
-    height: 200px;
-}
+    font-size: 16px
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 30px
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 10px
+  }
