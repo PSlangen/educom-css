@@ -1,37 +1,50 @@
-/* At the top of the file */
+
 :root {
 
-    /* FONTS */
-    --regular: "Arial";
-   
     /* COLORS */
-    --dark-brown: #402214;
-    --lighter-brown:  #774231;
-    --lightest-brown: #aa4b1b;
-   
-    --darker-red: #b31714;
-    --lighter-red: #dc3439;
-   
-    --white: #FFF;
-    --black: #000;
+    --blue: #0000ff;
+    --dark-blue: #010188;
+}
 
-    /* PADDING */
-    --regular: "35px 70px 50px 90px";
-   
-   }
-   
-   /* Usage */   
-   
-   h1 {
-    font-family: var(--regular);
-    color: var(--darker-red);
-    background-color: var(--lighter-brown);
-    padding: var(--regular)
-   }
+.button-container a {
+    width: 200px;
+    padding: 10px;
+    color: #FFF;
+    background-color: #F00;
+    
+    /* ROUNDING THE CORNERS */
+    border-radius: 10px;
+    
+    /* CREATED WITH THE SHADOW GENERATOR */
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
 
-   h2 {
-    font-family: var(--regular);
-    color: var(--lighter-red);
-    background-color: var(--dark-brown);
-    padding: var(--regular)
-   }
+    /* Let's get rid of the underline */
+    text-decoration: none;
+    
+    /* Transition effect */
+    transition: all 0.5s ease;
+}
+.button-container a:hover {
+    background-color: #AF1F16;
+    /* Let's get rid of the underline */
+    text-decoration: none;
+}
+
+.blue-button a{
+    background-color: var(--blue);
+}
+.blue-button a:hover{
+    background-color: var(--dark-blue);
+}
+
+.gradient-button a{
+    background: rgb(0,36,1);
+    background: linear-gradient(90deg, rgba(0,36,1,1) 0%, rgba(18,255,0,1) 100%);
+}
+.gradient-button a:hover{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(9,124,0,1) 100%);
+}
+
